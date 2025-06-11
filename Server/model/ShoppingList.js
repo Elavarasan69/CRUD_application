@@ -10,4 +10,4 @@ const ShoppingItem = mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model("shopping_list",ShoppingItem)
+module.exports = mongoose.models.shopping_list || mongoose.model("shopping_list",ShoppingItem)
